@@ -1,5 +1,8 @@
 buildscript {
     repositories {
+        maven {
+          url "http://repo.spring.io/plugins-release/" 
+        }
         jcenter()
     }
     dependencies {
@@ -9,6 +12,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+          url "http://repo.spring.io/plugins-release/" 
+        }
         jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
